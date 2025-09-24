@@ -23,7 +23,8 @@
      .palette {
          display: flex;
          gap: 10px;
-         margin-top: 20px;
+         margin-top: 80px;
+         margin-bottom: 30px;
      }
 
      .colors {
@@ -39,9 +40,21 @@
         border-radius: 15px;
         transition: .05s ease;
      }
+
+     .colors3 {
+        width: 100px;
+        height: 100px;
+        border-radius: 15px;
+        transition: .05s ease;
+     }
+
+     .home {
+        
+     }
     </style>
 </head>
 <body>
+    <button class="Home"><a href=index.html>Explore More Colors</a></button>
     <h1>Find Your Perfect Yellow Color Scheme</h1>
     <div class= "palette">
         <div class = "colors"></div>
@@ -60,6 +73,15 @@
         <div class = "colors2"></div>
     </div>
     <button onclick="newColors()">Show Me More</button>
+
+    <div class= "palette">
+        <div class = "colors3"></div>
+        <div class = "colors3"></div>
+        <div class = "colors3"></div>
+        <div class = "colors3"></div>
+        <div class = "colors3"></div>
+    </div>
+    <button onclick="nextColors()">Show Me More</button>
 
     <script src="yellowscript.js"></script>
 </body>
