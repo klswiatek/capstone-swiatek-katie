@@ -32,6 +32,13 @@
         border-radius: 15px;
         transition: .05s ease;
      }
+
+     .colors2 {
+        width: 100px;
+        height: 100px;
+        border-radius: 15px;
+        transition: .05s ease;
+     }
     </style>
 </head>
 <body>
@@ -43,7 +50,16 @@
         <div class = "colors"></div>
         <div class = "colors"></div>
     </div>
-    <button onclick="getNewPalette()">Show Me More</button>
+    <button onclick="refreshColors()">Show Me More</button>
+
+    <div class= "palette">
+        <div class = "colors2"></div>
+        <div class = "colors2"></div>
+        <div class = "colors2"></div>
+        <div class = "colors2"></div>
+        <div class = "colors2"></div>
+    </div>
+    <button onclick="newColors()">Show Me More</button>
 
     <script src="yellowscript.js"></script>
 </body>
