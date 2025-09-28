@@ -1,33 +1,101 @@
 function refreshColors () {
 
-var url = "http://colormind.io/api/";
-var data = {
-	model : "default",
-	input : [[255,165,0],"N","N","N","N"]
-}
-
-var http = new XMLHttpRequest();
-
-http.onreadystatechange = function() {
-    if (http.readyState == 4 && http.status == 200) {
-        
-        var response = JSON.parse(http.responseText);
-        var palette = response.result;
-
-    
-        var colors = document.querySelectorAll('.colors');
-
-        palette.forEach(function(rgb, index) {
-            if (colors) {
-                colors.style.backgroundColor = `rgb(${rgb[0]}, ${rgb[1]}, ${rgb[2]})`;
-            }
-        });
+    var url = "http://colormind.io/api/";
+    var data = {
+        model : "default",
+        input : [[255,124,23],"N","N","N","N"]
     }
-};
-
-http.open("POST", url, true);
-http.send(JSON.stringify(data));
-
-}
-
-document.addEventListener('DOMContentLoaded', refreshColors);
+    
+    var http = new XMLHttpRequest();
+    
+    http.onreadystatechange = function() {
+        if (http.readyState == 4 && http.status == 200) {
+            
+            var response = JSON.parse(http.responseText);
+            var palette = response.result;
+    
+        
+            var colors = document.querySelectorAll('.colors');
+    
+            palette.forEach(function(rgb, index) {
+                if (colors[index]) {
+                    colors[index].style.backgroundColor = `rgb(${rgb[0]}, ${rgb[1]}, ${rgb[2]})`;
+                }
+            });
+        }
+    };
+    
+    http.open("POST", url, true);
+    http.send(JSON.stringify(data));
+    
+    }
+    
+    document.addEventListener('DOMContentLoaded', refreshColors);
+    
+    function newColors () {
+    
+        var url = "http://colormind.io/api/";
+        var data = {
+            model : "default",
+            input : ["N","N",[253,180,10],"N","N"]
+        }
+        
+        var http = new XMLHttpRequest();
+        
+        http.onreadystatechange = function() {
+            if (http.readyState == 4 && http.status == 200) {
+                
+                var response = JSON.parse(http.responseText);
+                var palette = response.result;
+        
+            
+                var colors = document.querySelectorAll('.colors2');
+        
+                palette.forEach(function(rgb, index) {
+                    if (colors[index]) {
+                        colors[index].style.backgroundColor = `rgb(${rgb[0]}, ${rgb[1]}, ${rgb[2]})`;
+                    }
+                });
+            }
+        };
+        
+        http.open("POST", url, true);
+        http.send(JSON.stringify(data));
+        
+        }
+        
+        document.addEventListener('DOMContentLoaded', newColors);
+    
+        function nextColors () {
+    
+            var url = "http://colormind.io/api/";
+            var data = {
+                model : "default",
+                input : ["N","N","N","N",[234,193,134]]
+            }
+            
+            var http = new XMLHttpRequest();
+            
+            http.onreadystatechange = function() {
+                if (http.readyState == 4 && http.status == 200) {
+                    
+                    var response = JSON.parse(http.responseText);
+                    var palette = response.result;
+            
+                
+                    var colors = document.querySelectorAll('.colors3');
+            
+                    palette.forEach(function(rgb, index) {
+                        if (colors[index]) {
+                            colors[index].style.backgroundColor = `rgb(${rgb[0]}, ${rgb[1]}, ${rgb[2]})`;
+                        }
+                    });
+                }
+            };
+            
+            http.open("POST", url, true);
+            http.send(JSON.stringify(data));
+            
+            }
+            
+            document.addEventListener('DOMContentLoaded', newColors);
