@@ -98,4 +98,4 @@ function newColors () {
         
         }
         
-        document.addEventListener('DOMContentLoaded', newColors);
+        document.addEventListener('DOMContentLoaded', newColors)
