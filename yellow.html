@@ -27,7 +27,7 @@
      .palette {
          display: flex;
          gap: 10px;
-         margin-top: 80px;
+         margin-top: 20px;
          margin-bottom: 30px;
      }
 
@@ -55,10 +55,26 @@
      .home {
         width: 10px;
      }
+
+     .button1{
+         font-family: Arial, Helvetica, sans-serif;
+         background-color: #e9d45c;
+         color: white;
+         padding: 10px;
+         border-radius: 10px;
+
+     }
+
+     .logo {
+        width: 200px;
+     }
     </style>
 </head>
 <body>
-    <button class="Home"><a href=index.html>Explore More Colors</a></button>
+    <h1>
+        <a href="index.html"><img class="logo" src="logo.png">
+        <button class="Home button1"><a href=index.html style="text-decoration: none; color:black;">Explore More Colors</a></button>
+    </h1>
     <h1>Find Your Perfect Yellow Color Scheme</h1>
     <div class= "palette">
         <div class = "colors"></div>
