@@ -37,7 +37,7 @@ function newColors () {
     var url = "http://colormind.io/api/";
     var data = {
         model : "default",
-        input : [[255,255,103],"N","N","N","N"]
+        input : ["N","N",[255,255,103],"N","N"]
     }
     
     var http = new XMLHttpRequest();
@@ -71,7 +71,7 @@ function newColors () {
         var url = "http://colormind.io/api/";
         var data = {
             model : "default",
-            input : [[254,255,191],"N","N","N","N"]
+            input : ["N","N","N","N",[254,255,191]]
         }
         
         var http = new XMLHttpRequest();
@@ -98,4 +98,4 @@ function newColors () {
         
         }
         
-        document.addEventListener('DOMContentLoaded', newColors);
+        document.addEventListener('DOMContentLoaded', nextColors);

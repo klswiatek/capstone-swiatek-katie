@@ -98,4 +98,4 @@ function refreshColors () {
             
             }
             
-            document.addEventListener('DOMContentLoaded', newColors);
+            document.addEventListener('DOMContentLoaded', nextColors);
