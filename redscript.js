@@ -84,7 +84,7 @@ function newColors () {
                     var palette = response.result;
             
                 
-                    var colors = document.querySelectorAll('.colors4');
+                    var colors = document.querySelectorAll('.colors3');
             
                     palette.forEach(function(rgb, index) {
                         if (colors[index]) {
