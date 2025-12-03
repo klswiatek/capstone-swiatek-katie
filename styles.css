@@ -12,8 +12,8 @@ body {
 
 }
 h1 {
- font-family:'Courier New', Courier, monospace;
- color:gray;
+ font-family: sans-serif;
+ color:rgb(95, 69, 39);
  text-align:center;
  text-align-last: auto;
 }
@@ -23,7 +23,8 @@ h1 {
  gap: 2vh;
  margin-top: 50px;
  margin-bottom: 20px;
- width: 70vw;
+ width: 60vw;
+ align-items: center;
  
 }
 
