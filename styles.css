@@ -56,50 +56,46 @@ width: 10px;
  font-family: Arial, Helvetica, sans-serif;
  background-color: #d43939;
  color: white;
+ font-size: 20px;
  padding: 10px;
  border-radius: 10px;
-
 }
 
 .button2{
  font-family: Arial, Helvetica, sans-serif;
  background-color: #e99648;
  color: white;
- font-size: 2vmin;
+ font-size: 20px;
  padding: 10px;
  border-radius: 10px;
- width: 17vw;
- height: 9vh;
-
 }
 
 .button3{
  font-family: Arial, Helvetica, sans-serif;
  background-color: #ecd54e;
  color: white;
+ font-size: 20px;
  padding: 10px;
  border-radius: 10px;
-
 }
 
 .button4{
  font-family: Arial, Helvetica, sans-serif;
  background-color: #599730;
  color: white;
+ font-size: 20px;
  padding: 10px;
  border-radius: 10px;
-
 }
 
 .button5{
  font-family: Arial, Helvetica, sans-serif;
  background-color: #3470f0;
  color: white;
- font-size: 3vmin;
+ font-size: 20px;
  padding: 10px;
  border-radius: 10px;
- width: 17vw;
- height: 12vh;
+}
 
 }
 
@@ -107,9 +103,9 @@ width: 10px;
  font-family: Arial, Helvetica, sans-serif;
  background-color: #783dd8;
  color: white;
+ font-size: 20px;
  padding: 10px;
  border-radius: 10px;
-
 }
 
 .logo {
